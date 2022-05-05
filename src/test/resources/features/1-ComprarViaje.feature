@@ -14,11 +14,11 @@ Feature: Módulo para la compra de pasajes
     Then valido el detalle de la compra
 
     Examples: 
-      | tipo_pasaje | destino | ruta         | tren                             | fecha_ida  | fecha_regreso | tipo_cabina     | num_cabinas | numero_adultos | numero_ninos | medio_pago |
-      | One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | SUITE CABINS    | 1 CABIN     |              1 |            1 | visa       |
-    	| One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | SUITE CABINS    | 2 CABINS    | 1-2            | 1-0          | visa       |
- #  	| One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | TWIN BED CABINS | 3 CABINS    | 1-2-1          | 1-0-1        | visa       |
+      | tipo_pasaje | destino | ruta         | tren                             | fecha_ida  | fecha_regreso | tipo_cabina  | num_cabinas | numero_adultos | numero_ninos | medio_pago |
+      | One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | SUITE CABINS | 1 CABIN     |              1 |            1 | visa       |
+      | One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | SUITE CABINS | 2 CABINS    | 1-2            | 1-0          | visa       |
 
+  #  	| One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | TWIN BED CABINS | 3 CABINS    | 1-2-1          | 1-0-1        | visa       |
   @ComprarTicketTrenExpedition
   Scenario Outline: 2-Validar que se pueda realizar compras de tren Expedite
     Given que accedo a la página principal de Perú Rail
@@ -48,6 +48,6 @@ Feature: Módulo para la compra de pasajes
 
     Examples: 
       | tipo_pasaje | destino      | ruta                 | tren | fecha_ida  | fecha_regreso | numero_adultos | numero_ninos |
-      | One Way     | Machu Picchu | Cusco > Machu Picchu | NA   | 02-02-2022 | NA            |              8 |            2 |
-      | Round trip  | Machu Picchu | Cusco > Machu Picchu | NA   | 02-02-2022 | 24-02-2022    |              5 |            6 |
-      | Round trip  | Machu Picchu | Cusco > Machu Picchu | NA   | 02-02-2022 | 24-02-2022    |              9 |            1 |
+      | One Way     | Machu Picchu | Cusco > Machu Picchu | NA   | 22-06-2022 | NA            |              8 |            2 |
+      | Round trip  | Machu Picchu | Cusco > Machu Picchu | NA   | 22-06-2022 | 28-06-2022    |              5 |            6 |
+      | Round trip  | Machu Picchu | Cusco > Machu Picchu | NA   | 22-06-2022 | 28-06-2022    |              9 |            1 |
