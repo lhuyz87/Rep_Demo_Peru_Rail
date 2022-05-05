@@ -1,6 +1,6 @@
 Feature: Módulo para la compra de pasajes
 
-  @ComprarTicketServicioBelmond
+  @ComprarTicketServicioBelmond @Regresion
   Scenario Outline: 1-Validar que se pueda realizar compras seleccionando el servicio BELMOND ANDEAN EXPLORER
     Given que accedo a la página principal de Perú Rail
     And ingreso el tipo de pasaje ida o vuelta "<tipo_pasaje>"
@@ -37,7 +37,7 @@ Feature: Módulo para la compra de pasajes
       | Round trip  | Machu Picchu | Cusco > Machu Picchu | NA   | 02-02-2022 | 24-02-2022    |              4 |            2 | Expedition 33 | Vistadome 34 | visa       |
       | Round trip  | Machu Picchu | Cusco > Machu Picchu | NA   | 02-02-2022 | 24-02-2022    |              2 |            2 | Expedition 33 | Vistadome 34 | visa       |
 
-  @ValidarMaximoNumeroPasajeros
+  @ValidarMaximoNumeroPasajeros @Regresion
   Scenario Outline: 3-Validar que muestra mensaje de error al tratar de registrar mas de 9 pasajeros
     Given que accedo a la página principal de Perú Rail
     And ingreso el tipo de pasaje ida o vuelta "<tipo_pasaje>"
