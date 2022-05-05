@@ -17,7 +17,7 @@ Feature: Módulo para la compra de pasajes
       | tipo_pasaje | destino | ruta         | tren                             | fecha_ida  | fecha_regreso | tipo_cabina     | num_cabinas | numero_adultos | numero_ninos | medio_pago |
       | One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | SUITE CABINS    | 1 CABIN     |              1 |            1 | visa       |
     	| One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | SUITE CABINS    | 2 CABINS    | 1-2            | 1-0          | visa       |
-    	| One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | TWIN BED CABINS | 3 CABINS    | 1-2-1          | 1-0-1        | visa       |
+ #  	| One Way     | Cusco   | Puno > Cusco | Andean Explorer, A Belmond Train | 22-06-2022 | NA            | TWIN BED CABINS | 3 CABINS    | 1-2-1          | 1-0-1        | visa       |
 
   @ComprarTicketTrenExpedition
   Scenario Outline: 2-Validar que se pueda realizar compras de tren Expedite
